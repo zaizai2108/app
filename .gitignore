@@ -18,9 +18,5 @@ build/
 
 # Log Files  
 *.log  
-
-.idea/
-
-app.iml
   
 
