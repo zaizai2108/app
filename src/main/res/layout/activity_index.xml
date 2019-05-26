@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:padding="15sp"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:background="@drawable/a1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tv_judge"
+        android:textSize="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="看你几次机能猜中数字:"
+        />
+    <EditText
+        android:id="@+id/et_judgeNumber"
+        android:textSize="20sp"
+        android:layout_below="@+id/tv_judge"
+        android:hint="输入数字(1-50)"
+        android:layout_width="100sp"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:id="@+id/llbt"
+        android:layout_below="@+id/et_judgeNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/bt_guess"
+            android:textSize="20sp"
+            android:layout_below="@+id/et_judgeNumber"
+            android:text="猜猜看"
+            android:layout_width="100sp"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/bt_jump"
+            android:textSize="20sp"
+            android:layout_below="@+id/et_judgeNumber"
+            android:text="跳过"
+            android:layout_width="100sp"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_describe"
+        android:textSize="20sp"
+        android:layout_below="@+id/llbt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

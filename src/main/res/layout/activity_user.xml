@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/rl_myclass"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/iv_myclass"
+                android:layout_marginTop="5dp"
+                android:background="@color/colorAccent"
+                android:src="@drawable/welcome14"
+                android:layout_alignParentRight="true"
+                android:layout_width="50sp"
+                android:layout_height="50sp" />
+            <LinearLayout
+                android:id="@+id/ll_myclass"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/tv_myclass_des"
+                    android:text="今天没课"
+                    android:layout_alignRight="@+id/tv_myclass"
+                    android:singleLine="true"
+                    android:ellipsize="marquee"
+                    android:marqueeRepeatLimit="marquee_forever"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/tv_myclass"
+                    android:layout_below="@+id/iv_myclass"
+                    android:layout_marginVertical="5dp"
+                    android:textSize="30sp"
+                    android:text="我的课程"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_below="@+id/ll_myclass"
+                android:background="#0A0708"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/iv_mysing"
+                android:layout_marginTop="5dp"
+                android:background="@color/colorAccent"
+                android:src="@drawable/welcome14"
+                android:layout_width="50sp"
+                android:layout_height="50sp" />
+            <TextView
+                android:id="@+id/tv_mysign"
+                android:layout_below="@+id/iv_mysing"
+                android:layout_marginVertical="5dp"
+                android:textSize="30sp"
+                android:text="我的考勤"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <View
+                android:layout_below="@+id/tv_mysign"
+                android:background="#0A0708"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/iv_myteam"
+                android:layout_marginTop="5dp"
+                android:background="@color/colorAccent"
+                android:src="@drawable/welcome14"
+                android:layout_width="50sp"
+                android:layout_height="50sp" />
+            <TextView
+                android:id="@+id/tv_myteam"
+                android:layout_below="@+id/iv_myteam"
+                android:layout_marginVertical="5dp"
+                android:textSize="30sp"
+                android:text="我的社团"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <View
+                android:layout_below="@+id/tv_myteam"
+                android:background="#0A0708"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/iv_mylove"
+                android:layout_marginTop="5dp"
+                android:background="@color/colorAccent"
+                android:src="@drawable/welcome14"
+                android:layout_width="50sp"
+                android:layout_height="50sp" />
+            <TextView
+                android:id="@+id/tv_mylove"
+                android:layout_below="@+id/iv_mylove"
+                android:layout_marginVertical="5dp"
+                android:textSize="30sp"
+                android:text="我的对象"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <View
+                android:layout_below="@+id/tv_mylove"
+                android:background="#0A0708"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+        </RelativeLayout>
+
+
+
+    </LinearLayout>
+</ScrollView>

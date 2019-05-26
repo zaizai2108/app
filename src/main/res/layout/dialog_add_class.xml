@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="350dp"
+    android:layout_gravity="center"
+    android:layout_margin="30dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <EditText
+            android:id="@+id/et_Day"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="请输入哪一天（周几）"
+            android:textSize="30sp"
+            android:layout_gravity="left"
+            />
+
+        <EditText
+            android:id="@+id/et_Name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="请输入课程名称"
+            android:textSize="30sp"
+            />
+
+        <EditText
+            android:id="@+id/et_Time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="请输入上课时间"
+            android:textSize="30sp"
+            />
+
+        <EditText
+            android:id="@+id/et_Address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="请输入上课教室"
+            android:textSize="30sp"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/bt_addClass"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="30sp"
+                android:text="添加课程"/>
+
+            <Button
+                android:id="@+id/bt_cancelAdd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="30sp"
+                android:text="取消添加"/>
+
+        </LinearLayout>
+        
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>
